@@ -13,6 +13,10 @@
 		52A0313E1A1AC1B900CB9863 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A0313D1A1AC1B900CB9863 /* Images.xcassets */; };
 		52A031411A1AC1B900CB9863 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A0313F1A1AC1B900CB9863 /* LaunchScreen.xib */; };
 		52A0314D1A1AC1B900CB9863 /* UnitTestingSandboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A0314C1A1AC1B900CB9863 /* UnitTestingSandboxTests.swift */; };
+		52C145BF1A1C13F500D860F4 /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C145BE1A1C13F500D860F4 /* Controller.swift */; };
+		52C145C11A1C141300D860F4 /* TwitterConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C145C01A1C141300D860F4 /* TwitterConnection.swift */; };
+		52C145C31A1C145900D860F4 /* TweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C145C21A1C145900D860F4 /* TweetView.swift */; };
+		52C145C51A1C146400D860F4 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C145C41A1C146400D860F4 /* Tweet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		52A031461A1AC1B900CB9863 /* UnitTestingSandboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingSandboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A0314B1A1AC1B900CB9863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52A0314C1A1AC1B900CB9863 /* UnitTestingSandboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingSandboxTests.swift; sourceTree = "<group>"; };
+		52C145BE1A1C13F500D860F4 /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		52C145C01A1C141300D860F4 /* TwitterConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitterConnection.swift; sourceTree = "<group>"; };
+		52C145C21A1C145900D860F4 /* TweetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetView.swift; sourceTree = "<group>"; };
+		52C145C41A1C146400D860F4 /* Tweet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tweet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		52A031331A1AC1B900CB9863 /* UnitTestingSandbox */ = {
 			isa = PBXGroup;
 			children = (
+				52C145BD1A1C139300D860F4 /* Classes */,
 				52A031361A1AC1B900CB9863 /* AppDelegate.swift */,
 				52A031381A1AC1B900CB9863 /* ViewController.swift */,
 				52A0313A1A1AC1B900CB9863 /* Main.storyboard */,
@@ -110,6 +119,17 @@
 				52A0314B1A1AC1B900CB9863 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		52C145BD1A1C139300D860F4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				52C145BE1A1C13F500D860F4 /* Controller.swift */,
+				52C145C01A1C141300D860F4 /* TwitterConnection.swift */,
+				52C145C21A1C145900D860F4 /* TweetView.swift */,
+				52C145C41A1C146400D860F4 /* Tweet.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C145BF1A1C13F500D860F4 /* Controller.swift in Sources */,
+				52C145C11A1C141300D860F4 /* TwitterConnection.swift in Sources */,
 				52A031391A1AC1B900CB9863 /* ViewController.swift in Sources */,
+				52C145C51A1C146400D860F4 /* Tweet.swift in Sources */,
+				52C145C31A1C145900D860F4 /* TweetView.swift in Sources */,
 				52A031371A1AC1B900CB9863 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +431,7 @@
 				52A031521A1AC1B900CB9863 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		52A031531A1AC1B900CB9863 /* Build configuration list for PBXNativeTarget "UnitTestingSandboxTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +440,7 @@
 				52A031551A1AC1B900CB9863 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
