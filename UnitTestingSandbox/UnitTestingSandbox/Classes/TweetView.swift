@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class TweetView {
+    let tweets: [Tweet]
+    
+    init(displayTweets: [Tweet]) {
+        tweets = displayTweets
+    }
+    
+    func render() {
+        // display tweets here
+    }
+}

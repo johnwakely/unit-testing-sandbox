@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class Tweet {
+    var text: String
+    var hashtags: String
+    
+    init(tweetText: String, tweetHashTags: String) {
+        text = tweetText
+        hashtags = tweetHashTags
+    }
+}

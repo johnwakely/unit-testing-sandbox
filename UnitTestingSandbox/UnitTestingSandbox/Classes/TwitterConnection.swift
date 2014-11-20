@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+class TwitterConnection: ApiConnector {
+    func fetchResource(request: String) -> [[String: String]] {
+        // Do network call here
+        return [];
+    }
+}

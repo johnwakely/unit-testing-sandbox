@@ -1,15 +1,15 @@
 //
-//  UnitTestingSandboxTests.swift
-//  UnitTestingSandboxTests
+//  TweetRepositoryTests.swift
+//  UnitTestingSandbox
 //
-//  Created by John Wakley on 17/11/2014.
+//  Created by John Wakley on 20/11/2014.
 //  Copyright (c) 2014 John Wakley. All rights reserved.
 //
 
 import UIKit
 import XCTest
 
-class UnitTestingSandboxTests: XCTestCase {
+class TweetRepositoryTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -22,15 +22,10 @@ class UnitTestingSandboxTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        XCTAssert(true, "Pass")
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock() {
-            // Put the code you want to measure the time of here.
-        }
+        let repo = TweetRepository();
+
+
     }
     
 }
+
