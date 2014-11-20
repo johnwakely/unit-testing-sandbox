@@ -20,22 +20,37 @@ class TweetRepository {
     }
     
     func fetchTweets(hashtags: [String]) -> [Tweet] {
-        // Build request for tweets with specified hashtags here
+        // Request tweets
         let request = "api.twitter.com/tweets"
-        
         let apiResponse = connection.fetchResource(request)
         
         // Parse API response and map to Tweet model objects
         let tweets = parsedApiTweets(apiResponse)
         
-        return tweets
+        // Filter tweets matching hashtags
+        var filteredTweets: [Tweet] = []
+        for tweet in tweets {
+            var foundAllHastagsForTweet = true
+            for hashtag in hashtags {
+                if (tweet.hashtags.rangeOfString(hashtag) == nil) {
+                    foundAllHastagsForTweet = false
+                    break;
+                }
+            }
+            
+            if (foundAllHastagsForTweet) {
+                filteredTweets.append(tweet)
+            }
+        }
+        
+        return filteredTweets
     }
     
     func parsedApiTweets(apiResponse: [[String: String]]) -> [Tweet] {
         var tweets: [Tweet] = []
         
         for item in apiResponse {
-            let text = item["text"]
+            let text = item["body"]
             let hashtags = item["hashtags"]
             let tweet = Tweet(tweetText: text!, tweetHashTags: hashtags!)
             tweets.append(tweet)

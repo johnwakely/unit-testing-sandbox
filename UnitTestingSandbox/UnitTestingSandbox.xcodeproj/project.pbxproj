@@ -18,6 +18,7 @@
 		5283BC151A1E707D00804C64 /* BadController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283BC091A1E44E500804C64 /* BadController.swift */; };
 		5283BC161A1E707F00804C64 /* TweetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283BC0B1A1E4A4F00804C64 /* TweetRepository.swift */; };
 		5283BC171A1E708200804C64 /* ApiConnector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283BC0D1A1E5A1F00804C64 /* ApiConnector.swift */; };
+		5283BC191A1E7E1E00804C64 /* StubTwitterConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5283BC181A1E7E1E00804C64 /* StubTwitterConnection.swift */; };
 		52A031371A1AC1B900CB9863 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A031361A1AC1B900CB9863 /* AppDelegate.swift */; };
 		52A031391A1AC1B900CB9863 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A031381A1AC1B900CB9863 /* ViewController.swift */; };
 		52A0313C1A1AC1B900CB9863 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A0313A1A1AC1B900CB9863 /* Main.storyboard */; };
@@ -44,6 +45,7 @@
 		5283BC0B1A1E4A4F00804C64 /* TweetRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetRepository.swift; sourceTree = "<group>"; };
 		5283BC0D1A1E5A1F00804C64 /* ApiConnector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiConnector.swift; sourceTree = "<group>"; };
 		5283BC0F1A1E6E2D00804C64 /* TweetRepositoryTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetRepositoryTests.swift; sourceTree = "<group>"; };
+		5283BC181A1E7E1E00804C64 /* StubTwitterConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StubTwitterConnection.swift; sourceTree = "<group>"; };
 		52A031311A1AC1B900CB9863 /* UnitTestingSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestingSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A031351A1AC1B900CB9863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52A031361A1AC1B900CB9863 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				52A0314B1A1AC1B900CB9863 /* Info.plist */,
+				5283BC181A1E7E1E00804C64 /* StubTwitterConnection.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				5283BC161A1E707F00804C64 /* TweetRepository.swift in Sources */,
 				5283BC121A1E707400804C64 /* TwitterConnection.swift in Sources */,
 				5283BC141A1E707A00804C64 /* Tweet.swift in Sources */,
+				5283BC191A1E7E1E00804C64 /* StubTwitterConnection.swift in Sources */,
 				5283BC131A1E707600804C64 /* TweetView.swift in Sources */,
 				5283BC101A1E6E2D00804C64 /* TweetRepositoryTests.swift in Sources */,
 				5283BC171A1E708200804C64 /* ApiConnector.swift in Sources */,
